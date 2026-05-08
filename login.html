@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAYA TIC TAC TOE - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+
+    <div class="login-container">
+        <header class="header-section">
+            <h1 class="game-title">MAYA <span class="accent-title">TIC TAC TOE</span></h1>
+            <p class="subtitle">Enter the Ancient Arena</p>
+        </header>
+
+        <div class="login-card">
+            <form id="loginForm">
+                <div class="form-group">
+                    <label class="input-label">Warrior Name</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">👤</span>
+                        <input type="text" id="username" placeholder="Username or Email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="input-label">Secret Cipher</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">🔑</span>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <span class="toggle-password" id="togglePassword">👁️</span>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox"> Remember Ritual
+                    </label>
+                    <a href="#" class="forgot-link">Lost cipher?</a>
+                </div>
+
+                <button type="submit" class="btn btn-login" id="loginBtn">
+                    <span>LOGIN</span>
+                    <div class="loader" id="loader"></div>
+                </button>
+
+                <button type="button" class="btn btn-guest">PLAY AS GUEST</button>
+            </form>
+
+            <div class="divider">Or Connect via</div>
+
+            <div class="social-login">
+                <div class="social-btn"><span class="google-icon">G</span></div>
+                <div class="social-btn"><span class="fb-icon">f</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

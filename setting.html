@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAYA TIC TAC TOE - Settings</title>
+    <link rel="stylesheet" href="setting.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    <div id="toast" class="toast">Settings Saved Successfully!</div>
+
+    <div class="settings-container">
+        <header class="header">
+            <a href="index.html" class="nav-btn">⬅ BACK</a>
+            <div class="title-box">
+                <h1>SETTINGS</h1>
+                <p>Customize Your Ancient Arena</p>
+            </div>
+            <button class="nav-btn" onclick="window.location.href='sidebar.html'">🏠</button>
+        </header>
+
+        <div class="settings-panel">
+            
+            <div class="section-title">🔊 Sound Settings</div>
+            <div class="setting-item">
+                <span class="setting-label">Ancient Music</span>
+                <label class="switch"><input type="checkbox" id="musicToggle" checked><span class="slider"></span></label>
+            </div>
+            <div class="setting-item">
+                <span class="setting-label">Sound Effects</span>
+                <label class="switch"><input type="checkbox" id="sfxToggle" checked><span class="slider"></span></label>
+            </div>
+            <div class="setting-item">
+                <span class="setting-label">Master Volume</span>
+                <input type="range" min="0" max="100" value="80" class="volume-slider">
+            </div>
+
+            <div class="section-title">⚖️ Gameplay</div>
+            <div class="setting-item">
+                <span class="setting-label">Solar Timer</span>
+                <select id="timerSelect">
+                    <option value="15">15 Seconds</option>
+                    <option value="30">30 Seconds</option>
+                    <option value="60">60 Seconds</option>
+                </select>
+            </div>
+            <div class="setting-item">
+                <span class="setting-label">Arena Difficulty</span>
+                <select id="difficultySelect">
+                    <option>Easy</option>
+                    <option selected>Medium</option>
+                    <option>Hard</option>
+                </select>
+            </div>
+
+            <div class="section-title">👤 Warriors</div>
+            <div class="setting-item">
+                <span class="setting-label">Player O Name</span>
+                <input type="text" class="name-input" value="Warrior O">
+            </div>
+            <div class="setting-item">
+                <span class="setting-label">Player X Name</span>
+                <input type="text" class="name-input" value="Warrior X">
+            </div>
+
+            <div class="section-title">✨ Visuals & Spirit</div>
+            <div class="setting-item">
+                <span class="setting-label">Spirit Particles</span>
+                <label class="switch"><input type="checkbox" checked><span class="slider"></span></label>
+            </div>
+            <div class="setting-item">
+                <span class="setting-label">Language</span>
+                <select>
+                    <option>English</option>
+                    <option>Hindi</option>
+                    <option>Spanish</option>
+                    <option>French</option>
+                </select>
+            </div>
+
+            <div class="actions">
+                <button class="btn btn-save" id="saveBtn">SAVE SETTINGS</button>
+                <div class="btn-group">
+                    <button class="btn btn-secondary">RESET DEFAULT</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='index.html'">EXIT ARENA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="setting.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maya Tic Tac Toe - Ancient Strategy</title>
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    <div id="loader" class="loader-wrapper">
+        <div class="maya-spinner"></div>
+        <p>AWAKENING ANCIENT SPIRITS...</p>
+    </div>
+
+    <div class="game-view">
+        <div class="floating-particles"></div>
+        
+        <header class="top-bar">
+            <button id="menuBtn" class="main-menu-trigger">☰</button>
+            <div class="header-logo">
+                <h1 class="logo">MAYA <span class="purple">TIC TAC TOE</span></h1>
+                <p class="subtitle">ANCIENT STRATEGY BATTLE</p>
+            </div>
+            <button class="settings-trigger" onclick="window.location.href='setting.html'">⚙️</button>
+        </header>
+        
+        <main class="center-content">
+            <div class="hero-board-wrapper">
+                <div class="floating-symbol o-float">●</div>
+                <div class="floating-symbol x-float">✖</div>
+                <div class="main-board-art">
+                    <div class="art-grid">
+                        <div class="art-cell"></div><div class="art-cell"></div><div class="art-cell"></div>
+                        <div class="art-cell"></div><div class="art-cell"></div><div class="art-cell"></div>
+                        <div class="art-cell"></div><div class="art-cell"></div><div class="art-cell"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn-premium play-btn" onclick="window.location.href='game.html'">START RITUAL</button>
+                <div class="btn-row">
+                    <button class="btn-premium">MULTIPLAYER</button>
+                    <button class="btn-premium">TOURNAMENT</button>
+                </div>
+                <button class="btn-premium secondary">LEADERBOARD</button>
+            </div>
+
+            <div class="home-cards">
+                <div class="info-card reward-card">
+                    <div class="card-icon">🪙</div>
+                    <div class="card-text">
+                        <span>DAILY GIFT</span>
+                        <p>500 COINS</p>
+                    </div>
+                    <button class="claim-btn">CLAIM</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-texture"></div>
+        <button class="close-sidebar" id="closeSidebar">✕</button>
+        
+        <header class="sidebar-header">
+            <div class="avatar-box">
+                <div class="avatar-ritual-ring"></div>
+                <div class="avatar-img"></div>
+            </div>
+            <h2 class="player-name">WARRIOR <span class="gold">AZTEC</span></h2>
+            <div class="level-tag">LEVEL 14</div>
+            <div class="xp-container">
+                <div class="xp-bar-outer">
+                    <div class="xp-bar-inner" style="width: 65%;"></div>
+                </div>
+                <p class="xp-label">650 / 1000 XP</p>
+            </div>
+        </header>
+
+        <section class="player-stats-grid">
+            <div class="stat-tile">
+                <span class="val">128</span>
+                <span class="lbl">WINS</span>
+            </div>
+            <div class="stat-tile">
+                <span class="val">45</span>
+                <span class="lbl">LOSSES</span>
+            </div>
+            <div class="stat-tile">
+                <span class="val">#402</span>
+                <span class="lbl">RANK</span>
+            </div>
+        </section>
+
+        <nav class="menu-items">
+            <button class="menu-item active"><i>🏠</i> <span>HOME</span></button>
+            <button class="menu-item" onclick="window.location.href='game.html'"><i>🎮</i> <span>PLAY GAME</span></button>
+            <button class="menu-item"><i>👥</i> <span>MULTIPLAYER</span></button>
+            <button class="menu-item"><i>📊</i> <span>LEADERBOARD</span></button>
+            <div class="maya-divider">◈ ◈ ◈</div>
+            <button class="menu-item"><i>🎖️</i> <span>ACHIEVEMENTS</span></button>
+            <button class="menu-item" onclick="window.location.href='setting.html'"><i>⚙️</i> <span>SETTINGS</span></button>
+            <button class="menu-item logout" onclick="window.location.href='login.html'"><i>🚪</i> <span>LOGOUT</span></button>
+        </nav>
+
+        <footer class="sidebar-footer">
+            <div class="social-links"><span>f</span><span>𝕏</span><span>ig</span></div>
+            <p class="version">VERSION 1.0.4</p>
+        </footer>
+    </aside>
+
+    <script src="sidebar.js"></script>
+</body>
+</html>
